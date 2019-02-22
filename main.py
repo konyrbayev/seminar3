@@ -1,15 +1,28 @@
 from linked_list import MyList, ListNode
+from myclass import Shape
 
-lst = MyList()
+sh1=Shape(3,1)
+sh2=Shape(5,7)
+sh3=Shape(4,2)
+sh4=Shape()
+l=MyList()
+l.push(sh1)
+l.push(sh2)
+l.push(sh3)
+l.push(sh4)
 
-nd = ListNode(1)
-lst.add(nd)
-nd = ListNode(2)
-lst.add(nd)
-nd = ListNode(3)
-lst.add(nd)
-lst.remove(2)
-#lst.remove(1)
+print("After adding objects: ")
+for i in l:
+   i.define()
 
-for data in lst:
-   print(data)
+print("\nAfter popping last object: ")
+l.pop()
+for i in l:
+   i.define()
+
+print("\nAfter popping last object: ")
+l.pop()
+for i in l:
+   i.define()
+
+

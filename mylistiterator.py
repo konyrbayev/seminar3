@@ -11,4 +11,4 @@ class MyListIterator:
         else: 
            data = self.curNode.data
            self.curNode = self.curNode.next
-        return data
+           return data
